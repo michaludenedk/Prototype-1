@@ -1,19 +1,18 @@
 {
   "name": "studieservice",
   "version": "1.0.0",
-  "description": "",
+  "description": "Studieservice side til studerende der har behov eller ikke kan finde hjælp online ",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
     "pug": "^3.0.0"
   },
-  "devDependencies": {
-    "browser-sync": "^2.26.7"
-  },
+  "devDependencies": {},
   "scripts": {
-    "test": "nodemon ./index.js"
+    "test": "nodemon ./index.js",
+    "ui": "browser-sync start --proxy=localhost:8000 --files='**/*.css, **/*.pug, **/*.js' --ignore=node_modules --reload-delay 10 --no-ui --no-notify"
   },
-  "author": "",
+  "author": "Michal Sørensen",
   "license": "ISC"
 }
